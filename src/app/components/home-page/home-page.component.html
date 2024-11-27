@@ -1,1 +1,21 @@
-<p>home-page works!</p>
+<!-- barra de navegación con los botones para enrutar a mis componentes -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"></a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/']">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/list']">Product List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/add']">Add Product</a>
+      </li>
+      <li class="nav-item"></li>
+      <li class="nav-item">
+        <button class="btn btn-danger" (click)="logout()">Logout</button>
+      </li>
+    </ul>
+  </div>
+</nav>

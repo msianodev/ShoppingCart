@@ -1,0 +1,4 @@
+.btn btn-danger {
+  display: flex;
+  justify-content: flex-end;
+}
